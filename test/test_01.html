@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <title>{% block title %}My zmazing site{% endblock %}</title>
+    </head>
+    <body>
+        <div id="sidebar">
+            {% block sidebar %}
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/blog/">Blog</a></li>
+            </ul>
+            {% endblock %}
+        </div>
+
+        <dov id="content">
+            {% block content %}{% endblock %}
+        </dov>
+    </body>
+</html>
